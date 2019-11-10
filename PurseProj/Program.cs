@@ -20,7 +20,11 @@ namespace PurseProj
             };
 
             Console.WriteLine($"Name: {card.Name} Number: {card.Number}");
-
+            MoneyLib.Money money = new MoneyLib.Money();
+            money.Name = "Euro";
+            money.Nominal = 500;
+            money.Count = 1000;
+            Console.WriteLine($"moneyname - {money.Name}, moneynominal - {money.Nominal}, moneysum - {money.Count}");
             Console.ReadKey();
         }
     }
